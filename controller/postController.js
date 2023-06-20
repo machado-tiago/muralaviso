@@ -12,7 +12,7 @@ router.use(bodyParser.urlencoded({extended:true}))
 
 router.post("/new",(req,res)=>{
     post.newPost(req.body.title,req.body.description)
-    res.send(post.getAll())
+    res.redirect("/post")
 })
 
 module.exports=router
