@@ -8,7 +8,7 @@ function getPosts() {
     })
     .then(json=>{
         let postElements =''
-        let postsJson= JSON.parse(json)
+        let postsJson= JSON.parse(json)//converte uma string em objeto JSON
         postsJson.forEach(element => {
             let htmlElement = `<tr>
                                     <td>${element.id}</td>
